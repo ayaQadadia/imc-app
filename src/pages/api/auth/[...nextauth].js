@@ -26,6 +26,6 @@ export const authOptions = {
         }),
     ],
     session: { strategy: "jwt" },
-    secret: 'fuckthisauth'
+    secret: process.env.NEXTAUTH_SECRET
 }
 export default NextAuth(authOptions);
